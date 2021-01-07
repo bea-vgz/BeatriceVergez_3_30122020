@@ -1,0 +1,15 @@
+#container_footer {
+    background-color: #353535;
+    max-width: 100%;
+}
+.container_footer {
+    @include footer;
+    a {
+        text-decoration: none;
+        color:white;
+        &:hover {
+            cursor: pointer;
+            color: $colour-tertiary;
+        }
+    }
+}

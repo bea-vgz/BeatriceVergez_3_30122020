@@ -1,3 +1,21 @@
 $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiary: #99E2D0;
+
+@mixin button_pink {
+    background: linear-gradient($colour-secondary, $colour-primary);
+    border-radius: 2rem;
+    border: none;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    color: white;
+    cursor: pointer;
+}
+
+@mixin footer {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    padding: 3rem;
+}

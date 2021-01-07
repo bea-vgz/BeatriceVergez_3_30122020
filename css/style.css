@@ -1,9 +1,53 @@
 p {
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
 }
 
 h1 {
-  font-family: 'Shrikhand', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+#container_footer {
+  background-color: #353535;
+  max-width: 100%;
+}
+
+.container_footer {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  padding: 3rem;
+}
+.container_footer a {
+  text-decoration: none;
+  color: white;
+}
+.container_footer a:hover {
+  cursor: pointer;
+  color: #99E2D0;
+}
+
+.intro_site_button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+  cursor: pointer;
+}
+
+.commande_button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 2rem;
+  border: none;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+  color: white;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
