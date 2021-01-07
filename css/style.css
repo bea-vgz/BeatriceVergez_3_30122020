@@ -8,6 +8,30 @@ h1 {
   font-weight: 700;
 }
 
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.container_header {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+}
+.container_header_icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 #container_footer {
   background-color: #353535;
   max-width: 100%;
