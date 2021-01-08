@@ -1,5 +1,5 @@
 #container_footer {
-    background-color: #353535;
+    background-color: map-get($background-color, gris_fonce);
     max-width: 100%;
 }
 .container_footer {

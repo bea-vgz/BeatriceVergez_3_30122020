@@ -6,12 +6,13 @@ p {
 h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
+  font-size: 2rem;
 }
 
 h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 h3 {
@@ -23,13 +24,84 @@ h3 {
 .container_header {
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 0.5rem #0000002e;
   max-width: 100%;
   width: 100%;
+  padding: 2rem;
 }
-.container_header_icon {
+@media screen and (max-width: 480px) {
+  .container_header {
+    width: 100%;
+  }
+}
+
+.container_localisation {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  background-color: #EAEAEA;
+  position: relative;
+  padding: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .container_localisation {
+    width: 100%;
+  }
+}
+.container_localisation__icon {
+  margin-right: 1rem;
+}
+.container_localisation__text {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.container_fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+.container_fonctionnement__cartouche {
+  list-style-type: none;
+  counter-reset: compteListe;
+}
+.container_fonctionnement__options {
+  max-width: 100%;
+  width: 20%;
+  display: flex;
+  flex: row;
+  background-color: #F6F6F6;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  align-items: center;
+  box-shadow: 0 0 16px #0000002e;
+  margin-bottom: 1rem;
+}
+.container_fonctionnement__options::before {
+  counter-increment: compteListe 1;
+  content: counter(compteListe) " ";
+  background-color: #9356DC;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-left: -1.75rem;
+}
+.container_fonctionnement i {
+  color: #353535;
+  margin-left: 1rem;
+}
+.container_fonctionnement a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  margin-left: 1rem;
 }
 
 #container_footer {
@@ -40,6 +112,7 @@ h3 {
 .container_footer {
   color: white;
   font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
   font-weight: lighter;
   padding: 3rem;
 }
