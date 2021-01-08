@@ -24,7 +24,6 @@ h3 {
 .container_header {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 0.5rem #0000002e;
   max-width: 100%;
   width: 100%;
   padding: 2rem;
@@ -37,6 +36,7 @@ h3 {
 
 .container_localisation {
   display: flex;
+  box-shadow: 0 0 15px #0000002e inset;
   background-color: #EAEAEA;
   position: relative;
   padding: 1rem;
@@ -59,6 +59,11 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 480px) {
+  .container_fonctionnement {
+    width: 100%;
+  }
+}
 .container_fonctionnement__cartouche {
   list-style-type: none;
   counter-reset: compteListe;
@@ -73,8 +78,13 @@ h3 {
   border-radius: 1rem;
   padding: 1rem 1rem;
   align-items: center;
-  box-shadow: 0 0 16px #0000002e;
+  box-shadow: 0 0 10px #0000002e;
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 480px) {
+  .container_fonctionnement__options {
+    width: 100%;
+  }
 }
 .container_fonctionnement__options::before {
   counter-increment: compteListe 1;

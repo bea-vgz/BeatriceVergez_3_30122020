@@ -10,7 +10,6 @@
     }
     display: flex;
     flex-direction: column;
-    box-shadow: 0 0 0.5rem #0000002e;
     max-width: 100%;
     width: 100%;
     padding: 2rem;
@@ -20,6 +19,7 @@
         width: 100%;
     }
     display: flex;
+    box-shadow: 0 0 15px #0000002e inset;
     background-color: map-get($background-color, gris_moyen);
     position: relative;
     padding: 1rem;
@@ -33,6 +33,9 @@
             }
 }
 .container_fonctionnement {
+    @include mobile {
+        width: 100%;
+    }
     display: flex;
     flex-direction: column;
         &__cartouche {
@@ -40,6 +43,9 @@
             counter-reset: compteListe;
         }
             &__options {
+                @include mobile {
+                    width: 100%;
+                }
                 max-width: 100%;
                 width: 20%;
                 display: flex;
@@ -49,7 +55,7 @@
                 border-radius: 1rem;
                 padding: 1rem 1rem;
                 align-items: center;
-                box-shadow: 0 0 16px #0000002e;
+                box-shadow: 0 0 10px #0000002e;
                 margin-bottom: 1rem;
             }
                 &__options::before {
