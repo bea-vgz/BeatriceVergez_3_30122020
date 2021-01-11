@@ -21,6 +21,17 @@ h3 {
   font-size: 1rem;
 }
 
+h4 {
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 1.7rem;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
 body {
   margin: 0;
 }
@@ -235,9 +246,11 @@ body {
 .container_header_rts {
   display: flex;
   max-width: 100%;
-  padding: 2rem;
-  text-align: center;
+  padding: 1rem;
   position: relative;
+}
+.container_header_rts__logo {
+  text-align: center;
 }
 
 .img_restaurants {
@@ -249,6 +262,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
+  background-color: #F6F6F6;
+  border-radius: 1.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

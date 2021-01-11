@@ -12,9 +12,11 @@ body {
     @include mobile;
     display: flex;
     max-width: 100%;
-    padding: 2rem;
-    text-align: center;
+    padding: 1rem;
     position: relative;
+        &__logo{
+            text-align: center;
+        }
 }
 
 .img_restaurants {
@@ -26,4 +28,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem;
+    background-color: $colour-quaternary;
+    border-radius: 1.3rem;
 }
