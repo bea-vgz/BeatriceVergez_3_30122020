@@ -24,7 +24,6 @@
             &__text {
                 font-size: 1rem;
                 font-family: 'Roboto', sans-serif;
-                font-weight: 700;
             }
 }
 .container_fonctionnement {
@@ -34,7 +33,8 @@
         &__cartouche {
             list-style-type: none;
             counter-reset: compteListe;
-            width: 85%;
+            width: 80%;
+            align-content: center;
         }
             &__options {
                 max-width: 100%;
@@ -59,7 +59,6 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    position: absolute;
                     margin-left: -1.75rem;
                 }
                     & i {
@@ -86,5 +85,47 @@
         }
             &__description {
                 font-size: 1rem;
+                margin-bottom: 2rem;
             }
+}
+
+.container_restaurants {
+    background-color: $colour-quaternary;
+        &__titre {
+            padding-top: 2.5rem;
+            padding-left: 1.2rem;
+        }
+}
+
+.cartouche_restaurants {
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+        &__bloc {
+            @include bloc;
+        }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+                &__figure {
+                    margin: 0rem;
+                }
+                    &__img {
+                        height: 10rem;
+                        object-fit: cover;
+                        object-position: center;
+                        width: 100%;
+                        border-radius: 1rem 1rem 0 0;
+                    }
+                        &__bloctext {
+                            margin-left: 1rem;
+                        }
+                            &__titre {
+                                margin-bottom: 0.3rem;
+                            }
+                                &__texte {
+                                    margin-top: 0.3rem;
+                                }
 }

@@ -25,5 +25,14 @@ $background-color : (gris_clair:$colour-quaternary, gris_fonce:$colour-quinary, 
     font-family: 'Roboto', sans-serif;
     font-size: map-get($font-size, h3);
     font-weight: lighter;
-    padding: 3rem;
+    padding: 1.2rem;
+    padding-bottom: 3rem;
+}
+
+@mixin bloc {
+    background-color: #FFFFFF;
+    border-radius: 1.3rem;
+    box-shadow: 0 0 16px #0000002e;
+    cursor: pointer;
+    margin-bottom: 2rem;
 }

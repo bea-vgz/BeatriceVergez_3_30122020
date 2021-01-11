@@ -5,7 +5,7 @@ p {
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.7rem;
 }
 
@@ -41,7 +41,6 @@ h3 {
 .container_localisation__text {
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
 }
 
 .container_fonctionnement {
@@ -51,7 +50,8 @@ h3 {
 .container_fonctionnement__cartouche {
   list-style-type: none;
   counter-reset: compteListe;
-  width: 85%;
+  width: 80%;
+  align-content: center;
 }
 .container_fonctionnement__options {
   max-width: 100%;
@@ -76,7 +76,6 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   margin-left: -1.75rem;
 }
 .container_fonctionnement i {
@@ -103,6 +102,52 @@ h3 {
 }
 .intro_site__description {
   font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.container_restaurants {
+  background-color: #F6F6F6;
+}
+.container_restaurants__titre {
+  padding-top: 2.5rem;
+  padding-left: 1.2rem;
+}
+
+.cartouche_restaurants {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+.cartouche_restaurants__bloc {
+  background-color: #FFFFFF;
+  border-radius: 1.3rem;
+  box-shadow: 0 0 16px #0000002e;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.cartouche_restaurants a {
+  text-decoration: none;
+  color: black;
+}
+.cartouche_restaurants__figure {
+  margin: 0rem;
+}
+.cartouche_restaurants__img {
+  height: 10rem;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.cartouche_restaurants__bloctext {
+  margin-left: 1rem;
+}
+.cartouche_restaurants__titre {
+  margin-bottom: 0.3rem;
+}
+.cartouche_restaurants__texte {
+  margin-top: 0.3rem;
 }
 
 #container_footer {
@@ -115,7 +160,12 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: lighter;
-  padding: 3rem;
+  padding: 1.2rem;
+  padding-bottom: 3rem;
+}
+.container_footer__logo {
+  width: 35%;
+  margin-bottom: 2rem;
 }
 .container_footer a {
   text-decoration: none;
@@ -124,6 +174,9 @@ h3 {
 .container_footer a:hover {
   cursor: pointer;
   color: #99E2D0;
+}
+.container_footer__categorie {
+  padding-bottom: 0.5rem;
 }
 
 .intro_site_button {

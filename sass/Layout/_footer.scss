@@ -4,12 +4,19 @@
 }
 .container_footer {
     @include footer;
-    a {
-        text-decoration: none;
-        color:white;
-        &:hover {
-            cursor: pointer;
-            color: $colour-tertiary;
+        &__logo {
+            width: 35%;
+            margin-bottom: 2rem;
         }
-    }
+            a {
+                text-decoration: none;
+                color:white;
+                &:hover {
+                    cursor: pointer;
+                    color: $colour-tertiary;
+                }
+            }
+                &__categorie {
+                    padding-bottom: 0.5rem;
+                }
 }
