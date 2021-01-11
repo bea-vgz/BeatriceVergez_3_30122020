@@ -228,4 +228,27 @@ body {
   box-shadow: 0 0 16px #0000002e;
 }
 
+body {
+  margin: 0;
+}
+
+.container_header_rts {
+  display: flex;
+  max-width: 100%;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.img_restaurants {
+  width: 100%;
+  object-fit: cover;
+}
+
+.header_menu_rts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=style.css.map */

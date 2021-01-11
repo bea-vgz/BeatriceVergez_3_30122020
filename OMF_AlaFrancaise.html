@@ -13,53 +13,56 @@
 </head>
 <body>
     <!-- Header -->
-    <header id="container_header">
-        <div class="container_header_logo+arrow">
-            <div class="arrow"> 
-                <a href="index.html">
-                    <i class="fas fa-arrow-left"></i>
-                </a>
-            </div>
-            <img class="container_header_logo" src="images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood" />
-        </div>
-        <img class="cartouche_restaurants_figure_img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="AlaFrancaise" />
+    <header class="container_header_rts">
+        <a href="index.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <img class="container_header_rts__logo" src="images/logo/ohmyfood@2x.svg" alt="logo_ohmyfood" />
     </header>
+    <img class="img_restaurants" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="AlaFrancaise" />
+
     <!-- Main -->
     <main class="main">
 
         <!-- Restaurants -->
-        <section id="container_restaurants">
-            <div id="container_restaurants_titre">
-                <h2 id="titre_container_restaurants">À la française</h2>
-                <i class="far fa-heart"></i>
-            </div>
-            <div id="container_cartouches_entrees">
+        <div class="header_menu_rts">
+            <h2 class="header_menu__titre">À la française</h2>
+            <button class="header_menu__coeur"> <i class="far fa-heart"></i> </button>
+        </div>
+        <section class="container_restaurants">
+            <div class="container_cartouches_entrees">
                 <h2>ENTRÉES</h2>
                 <article class="cartouche_entrees">
                     <a href="#" class="entrees">  
-                    <div class="cartouche_entrees_texte">
-                        <h3> Tartare de poulpe acidulé </h3>
-                        <p>Aux zests d'orange</p>
+                    <div class="cartouche_entrees__bloctext">
+                        <div>
+                            <h3> Tartare de poulpe acidulé </h3>
+                            <p>Aux zests d'orange</p>
+                        </div>
+                        <span class="cartouche_entrees__price">25€</span>
                     </div>
-                    <p class="cartouche_entrees_price">25€</p>
                     </a>
                 </article>
                 <article class="cartouche_entrees">
                     <a href="#" class="entrees">  
-                    <div class="cartouche_entrees_texte">
-                        <h3> Velouté de légumes d'antan </h3>
-                        <p>Carotte, panais, topinambour</p>
+                    <div class="cartouche_entrees__bloctext">
+                        <div>
+                            <h3> Velouté de légumes d'antan </h3>
+                            <p>Carotte, panais, topinambour</p>
+                        </div>
+                        <span class="cartouche_entrees_price">35€</span>
                     </div>
-                    <p class="cartouche_entrees_price">35€</p>
                     </a>
                 </article>
                 <article class="cartouche_entrees">
                     <a href="#" class="entrees">  
-                    <div class="cartouche_entrees_texte">
-                        <h3> Soupe à l'oignon </h3>
-                        <p>Revisitée</p>
+                    <div class="cartouche_entrees__bloctext">
+                        <div>
+                            <h3> Soupe à l'oignon </h3>
+                            <p>Revisitée</p>
+                        </div>
+                        <span class="cartouche_entrees_price">20€</span>
                     </div>
-                    <p class="cartouche_entrees_price">20€</p>
                     </a>
                 </article>
             </div>
@@ -67,29 +70,36 @@
                 <h2>PLATS</h2>
                 <article class="cartouche_plats">
                     <a href="#" class="plats">  
-                    <div class="cartouche_plats_texte">
-                        <h3> Coquilles Saint-Jacques </h3>
-                        <p>Accompagné d'une purée de panais</p>
+                    <div class="cartouche_entrees__bloctext">
+                        <div>
+                            <h3> Coquilles Saint-Jacques </h3>
+                            <p>Accompagné d'une purée de panais</p>
+                        </div>
+                        <span class="cartouche_plats_price">40€</span>
                     </div>
-                    <p class="cartouche_plats_price">40€</p>
                     </a>
                 </article>
                 <article class="cartouche_plats">
                     <a href="#" class="plats">  
-                    <div class="cartouche_plats_texte">
-                        <h3> Magret de canard </h3>
-                        <p>Et parmentier de pommes de terres</p>
+                    <div class="cartouche_entrees__bloctext">
+                        <div>
+                            <h3> Magret de canard </h3>
+                            <p>Et parmentier de pommes de terres</p>
+                        </div>
+                        <span class="cartouche_plats_price">35€</span>
+                    
                     </div>
-                    <p class="cartouche_plats_price">35€</p>
                     </a>
                 </article>
                 <article class="cartouche_plats">
                     <a href="#" class="plats">  
-                    <div class="cartouche_plats_texte">
-                        <h3> Pigeonneau d'Ille-et-Vilaine</h3>
-                        <p>Sur son lit de gnocchis aux légumes</p>
+                    <div class="cartouche_entrees__bloctext">
+                        <div>
+                            <h3> Pigeonneau d'Ille-et-Vilaine</h3>
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <span class="cartouche_plats_price">44€</span>
                     </div>
-                    <p class="cartouche_plats_price">44€</p>
                     </a>
                 </article>
             </div>
@@ -97,28 +107,35 @@
                 <h2>DESSERTS</h2>
                 <article class="cartouche_desserts">
                     <a href="#" class="desserts">  
-                    <div class="cartouche_desserts_texte">
-                        <h3> Pétales de violettes glacés </h3>
-                        <p>Et purée de noisettes</p>
+                    <div class="cartouche_entrees__bloctext">
+                        <div>
+                            <h3> Pétales de violettes glacés </h3>
+                            <p>Et purée de noisettes</p>
+                        </div>
+                        <span class="cartouche_desserts_price">18€</span>
                     </div>
-                    <p class="cartouche_desserts_price">18€</p>
                     </a>
                 </article>
                 <article class="cartouche_desserts">
                     <a href="#" class="desserts">  
-                    <div class="cartouche_desserts_texte">
-                        <h3> Fondant au chocolat </h3>
-                        <p>Revisité</p>
+                    <div class="cartouche_entrees__bloctext">
+                        <div>
+                            <h3> Fondant au chocolat </h3>
+                            <p>Revisité</p>
+                        </div>
+                        <span class="cartouche_desserts_price">22€</span>
                     </div>
-                    <p class="cartouche_desserts_price">22€</p>
                     </a>
                 </article>
                 <article class="cartouche_desserts">
                     <a href="#" class="plats">  
-                    <div class="cartouche_desserts_texte">
-                        <h3> Millefeuille croustillant </h3>
-                        <p>Myrtilles et pâtes d'amande </p>
-                    <p class="cartouche_desserts_price">23€</p>
+                    <div class="cartouche_entrees__bloctext">
+                        <div>
+                            <h3> Millefeuille croustillant </h3>
+                            <p>Myrtilles et pâtes d'amande </p>
+                        </div>
+                        <span class="cartouche_desserts_price">23€</span>
+                    </div>
                     </a>
                 </article>
             </div>
@@ -132,19 +149,19 @@
 
     <footer id="container_footer">
         <div class="container_footer">
-            <img class="container_footer_logo" src="images/logo/ohmyfood@2xwhite.png" alt="logo_ohmyfood" />
-            <div class="container_footer_categorie">
+            <img class="container_footer__logo" src="images/logo/ohmyfood@2xwhite.png" alt="logo_ohmyfood" />
+            <div class="container_footer__categorie">
                 <i class="fas fa-utensils"></i>
                 <a href="#">Proposer un restaurant</a>
             </div>
-            <div class="container_footer_categorie">
+            <div class="container_footer__categorie">
                 <i class="fas fa-hands-helping"></i>
                 <a href="#">Devenir partenaire</a>
             </div>
-            <div class="container_footer_categorie">
+            <div class="container_footer__categorie">
                 <a href="#">Mentions légales</a>
             </div>
-            <div class="container_footer_categorie">
+            <div class="container_footer__categorie">
                 <a href="#">Mentions légales</a>
             </div>
         </div>
