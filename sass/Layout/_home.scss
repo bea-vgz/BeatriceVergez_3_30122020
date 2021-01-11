@@ -4,16 +4,22 @@
     }
 }
 
+body {
+    margin: 0;
+}
+
 .container_header {
     @include mobile;
     max-width: 100%;
     padding: 2rem;
     text-align: center;
+    box-shadow: 0 0 0.5rem #0000002e;
+    position: relative;
+    z-index: 1;
 }
 .container_localisation {
     @include mobile;
     display: flex;
-    box-shadow: 0 0 15px #0000002e inset;
     background-color: map-get($background-color, gris_moyen);
     position: relative;
     padding: 1rem;
@@ -30,11 +36,12 @@
     @include mobile;
     display: flex;
     flex-direction: column;
+    width: 97%;
         &__cartouche {
             list-style-type: none;
             counter-reset: compteListe;
-            width: 80%;
             align-content: center;
+            margin-left: -1rem;
         }
             &__options {
                 max-width: 100%;
@@ -73,6 +80,10 @@
                             color: black;
                             margin-left: 1.5rem;
                         }
+                            &__titre {
+                                padding-top: 2.5rem;
+                                padding-left: 1rem;
+                            }
 }
 
 .intro_site {
@@ -119,13 +130,16 @@
                         width: 100%;
                         border-radius: 1rem 1rem 0 0;
                     }
-                        &__bloctext {
-                            margin-left: 1rem;
+                        &__nouveau {
+                            @include nouveau;
                         }
-                            &__titre {
-                                margin-bottom: 0.3rem;
+                            &__bloctext {
+                                margin-left: 1rem;
                             }
-                                &__texte {
-                                    margin-top: 0.3rem;
+                                &__titre {
+                                    margin-bottom: 0.3rem;
                                 }
+                                    &__texte {
+                                        margin-top: 0.3rem;
+                                    }
 }

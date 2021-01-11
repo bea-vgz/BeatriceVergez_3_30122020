@@ -21,15 +21,21 @@ h3 {
   font-size: 1rem;
 }
 
+body {
+  margin: 0;
+}
+
 .container_header {
   max-width: 100%;
   padding: 2rem;
   text-align: center;
+  box-shadow: 0 0 0.5rem #0000002e;
+  position: relative;
+  z-index: 1;
 }
 
 .container_localisation {
   display: flex;
-  box-shadow: 0 0 15px #0000002e inset;
   background-color: #EAEAEA;
   position: relative;
   padding: 1rem;
@@ -46,12 +52,13 @@ h3 {
 .container_fonctionnement {
   display: flex;
   flex-direction: column;
+  width: 97%;
 }
 .container_fonctionnement__cartouche {
   list-style-type: none;
   counter-reset: compteListe;
-  width: 80%;
   align-content: center;
+  margin-left: -1rem;
 }
 .container_fonctionnement__options {
   max-width: 100%;
@@ -89,6 +96,10 @@ h3 {
   text-decoration: none;
   color: black;
   margin-left: 1.5rem;
+}
+.container_fonctionnement__titre {
+  padding-top: 2.5rem;
+  padding-left: 1rem;
 }
 
 .intro_site {
@@ -139,6 +150,16 @@ h3 {
   object-position: center;
   width: 100%;
   border-radius: 1rem 1rem 0 0;
+}
+.cartouche_restaurants__nouveau {
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 1rem;
+  position: absolute;
+  right: 2.5rem;
 }
 .cartouche_restaurants__bloctext {
   margin-left: 1rem;

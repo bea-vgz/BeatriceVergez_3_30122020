@@ -36,3 +36,14 @@ $background-color : (gris_clair:$colour-quaternary, gris_fonce:$colour-quinary, 
     cursor: pointer;
     margin-bottom: 2rem;
 }
+
+@mixin nouveau {
+    background-color: $colour-tertiary;
+    color: #008766;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
+	position: absolute;
+    right: 2.5rem;
+}
