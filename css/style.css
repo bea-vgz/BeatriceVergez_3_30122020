@@ -5,8 +5,8 @@ p {
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
+  font-weight: 600;
+  font-size: 1.7rem;
 }
 
 h2 {
@@ -22,16 +22,9 @@ h3 {
 }
 
 .container_header {
-  display: flex;
-  flex-direction: column;
   max-width: 100%;
-  width: 100%;
   padding: 2rem;
-}
-@media screen and (max-width: 480px) {
-  .container_header {
-    width: 100%;
-  }
+  text-align: center;
 }
 
 .container_localisation {
@@ -40,11 +33,7 @@ h3 {
   background-color: #EAEAEA;
   position: relative;
   padding: 1rem;
-}
-@media screen and (max-width: 480px) {
-  .container_localisation {
-    width: 100%;
-  }
+  justify-content: center;
 }
 .container_localisation__icon {
   margin-right: 1rem;
@@ -59,20 +48,14 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 480px) {
-  .container_fonctionnement {
-    width: 100%;
-  }
-}
 .container_fonctionnement__cartouche {
   list-style-type: none;
   counter-reset: compteListe;
+  width: 85%;
 }
 .container_fonctionnement__options {
   max-width: 100%;
-  width: 20%;
   display: flex;
-  flex: row;
   background-color: #F6F6F6;
   height: 2rem;
   border-radius: 1rem;
@@ -80,11 +63,6 @@ h3 {
   align-items: center;
   box-shadow: 0 0 10px #0000002e;
   margin-bottom: 1rem;
-}
-@media screen and (max-width: 480px) {
-  .container_fonctionnement__options {
-    width: 100%;
-  }
 }
 .container_fonctionnement__options::before {
   counter-increment: compteListe 1;
@@ -111,7 +89,20 @@ h3 {
   font-weight: 500;
   text-decoration: none;
   color: black;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
+}
+
+.intro_site {
+  background-color: #F6F6F6;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.intro_site__titre {
+  font-size: 1.7rem;
+}
+.intro_site__description {
+  font-size: 1rem;
 }
 
 #container_footer {
@@ -144,6 +135,7 @@ h3 {
   font-weight: normal;
   color: white;
   cursor: pointer;
+  box-shadow: 0 0 16px #0000002e;
 }
 
 .commande_button {
@@ -155,6 +147,7 @@ h3 {
   font-weight: normal;
   color: white;
   cursor: pointer;
+  box-shadow: 0 0 16px #0000002e;
 }
 
 /*# sourceMappingURL=style.css.map */
