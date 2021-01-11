@@ -7,7 +7,6 @@
 body {
     margin: 0;
 }
-
 .container_header {
     @include mobile;
     max-width: 100%;
@@ -133,8 +132,12 @@ body {
                         &__nouveau {
                             @include nouveau;
                         }
-                            &__bloctext {
+                            &__blocfooter {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
                                 margin-left: 1rem;
+                                margin-right: 1rem;
                             }
                                 &__titre {
                                     margin-bottom: 0.3rem;
