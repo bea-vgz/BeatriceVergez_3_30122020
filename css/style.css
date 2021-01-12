@@ -247,12 +247,25 @@ body {
 .container_header_rts {
   display: flex;
   max-width: 100%;
-  padding: 1rem;
+  padding: 1.2rem;
   position: relative;
   color: black;
+  justify-content: center;
 }
-.container_header_rts__logo {
-  text-align: center;
+.container_header_rts a {
+  text-decoration: none;
+  color: black;
+}
+.container_header_rts__logo-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_header_rts__arrow {
+  padding: 1rem;
+  position: absolute;
+  top: 0.6rem;
+  left: 0.5rem;
 }
 
 .img_restaurants {
@@ -286,6 +299,16 @@ body {
   margin-top: -1rem;
 }
 
+.container_cartouches_entrees, .container_cartouches_plats, .container_cartouches_desserts {
+  margin-bottom: 3rem;
+}
+
+.container_cartouches_titre {
+  border-bottom: 4px solid #99E2D0;
+  padding-bottom: 0.3rem;
+  width: 12%;
+}
+
 .cartouche_entrees, .cartouche_plats, .cartouche_desserts {
   background-color: #FFFFFF;
   border-radius: 1.2rem;
@@ -317,7 +340,7 @@ body {
 .cartouche_entrees__price, .cartouche_plats__price, .cartouche_desserts__price {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .button {

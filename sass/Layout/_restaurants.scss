@@ -12,12 +12,25 @@ body {
     @include mobile;
     display: flex;
     max-width: 100%;
-    padding: 1rem;
+    padding: 1.2rem;
     position: relative;
     color: black;
-        &__logo{
-            text-align: center;
+    justify-content: center;
+        a {
+            text-decoration: none;
+            color: black;
         }
+            &__logo-arrow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                &__arrow {
+                    padding: 1rem;
+                    position: absolute;
+                    top: 0.6rem;
+                    left: 0.5rem;
+                }
 }
 .img_restaurants {
     width: 100%;
@@ -36,6 +49,16 @@ body {
 .container_rts {
     padding: 1.2rem;
     margin-top: -1rem;
+}
+
+.container_cartouches_entrees, .container_cartouches_plats, .container_cartouches_desserts {
+    margin-bottom: 3rem;
+}
+
+.container_cartouches_titre {
+    border-bottom: 4px solid $colour-tertiary;
+    padding-bottom: 0.3rem;
+    width: 12%;
 }
 
 .cartouche_entrees, .cartouche_plats, .cartouche_desserts {
@@ -64,7 +87,7 @@ body {
                             &__price {
                                 font-family: 'Roboto', sans-serif;
                                 font-weight: 700;
-                                margin-bottom: 1rem;
+                                margin-bottom: 0.8rem;
                             }
 }   
 .button {
