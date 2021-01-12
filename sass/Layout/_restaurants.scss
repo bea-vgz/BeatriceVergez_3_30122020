@@ -14,21 +14,55 @@ body {
     max-width: 100%;
     padding: 1rem;
     position: relative;
+    color: black;
         &__logo{
             text-align: center;
         }
 }
-
 .img_restaurants {
     width: 100%;
     object-fit: cover;
 }
-
-.header_menu_rts {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: $colour-quaternary;
-    border-radius: 1.3rem;
+#section_restaurants {
+    @include section_restaurants;
 }
+.header_menu_rts {
+    @include header_menu;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+}
+.container_rts {
+    padding: 1rem;
+    margin-top: -1rem;
+}
+
+.cartouche_entrees {
+    @include bloc;
+        &__bloctext {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding-left: 0.8rem;
+            padding-right: 0.8rem;
+        }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+                &__text {
+                    margin-top: -0.5rem;
+                }
+                    &__titre {
+                        margin-bottom: 0.5rem;
+                    }
+                        &__texte {
+                            margin-top: 0.3rem;
+                        }
+                            &__price {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 700;
+                                margin-bottom: 1rem;
+                            }
+}   

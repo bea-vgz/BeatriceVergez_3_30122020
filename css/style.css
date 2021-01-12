@@ -17,7 +17,7 @@ h2 {
 
 h3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1rem;
 }
 
@@ -28,7 +28,7 @@ h4 {
 
 h5 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 1rem;
 }
 
@@ -146,7 +146,7 @@ body {
   border-radius: 1.3rem;
   box-shadow: 0 0 16px #0000002e;
   cursor: pointer;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .cartouche_restaurants a {
   text-decoration: none;
@@ -178,6 +178,7 @@ body {
   justify-content: space-between;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-top: -0.7rem;
 }
 .cartouche_restaurants__titre {
   margin-bottom: 0.3rem;
@@ -248,6 +249,7 @@ body {
   max-width: 100%;
   padding: 1rem;
   position: relative;
+  color: black;
 }
 .container_header_rts__logo {
   text-align: center;
@@ -258,13 +260,63 @@ body {
   object-fit: cover;
 }
 
+#section_restaurants {
+  background-color: #F6F6F6;
+  border-radius: 2rem 2rem 0 0;
+  position: relative;
+}
+
 .header_menu_rts {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: #F6F6F6;
+  border-radius: 2rem 2rem 0 0;
+  margin-top: -3rem;
+}
+.header_menu_rts a {
+  text-decoration: none;
+  color: black;
+}
+
+.container_rts {
+  padding: 1rem;
+  margin-top: -1rem;
+}
+
+.cartouche_entrees {
+  background-color: #FFFFFF;
   border-radius: 1.3rem;
+  box-shadow: 0 0 16px #0000002e;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+.cartouche_entrees__bloctext {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.cartouche_entrees a {
+  text-decoration: none;
+  color: black;
+}
+.cartouche_entrees__text {
+  margin-top: -0.5rem;
+}
+.cartouche_entrees__titre {
+  margin-bottom: 0.5rem;
+}
+.cartouche_entrees__texte {
+  margin-top: 0.3rem;
+}
+.cartouche_entrees__price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
