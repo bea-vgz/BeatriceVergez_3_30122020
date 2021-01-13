@@ -98,7 +98,8 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .container_fonctionnement__options {
-    margin: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     flex: 1;
   }
 }
