@@ -4,7 +4,7 @@
     }
 }
 @mixin desktop {
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1024px){
         @content;
     }
 }
@@ -12,7 +12,6 @@
 body {
     margin: 0;
 }
-
 .container_header_rts {
     @include mobile;
     display: flex;

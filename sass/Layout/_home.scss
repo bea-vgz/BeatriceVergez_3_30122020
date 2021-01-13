@@ -5,7 +5,7 @@
 }
 
 @mixin desktop {
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1024px){
         @content;
     }
 }
@@ -54,7 +54,7 @@ body {
             @include desktop {
                 display: flex;
                 justify-content: space-between;
-                width: 75%;
+                width: 80%;
             }
         }
             &__options {
@@ -68,7 +68,8 @@ body {
                 box-shadow: 0 0 10px #0000002e;
                 margin-bottom: 1rem;
                     @include desktop {
-                        padding-right: 2rem;
+                        margin: 1.5rem;
+                        flex: 1;
                     }
             }
             
@@ -156,7 +157,7 @@ body {
             @include bloc;
             @include desktop {
                 width: 48%;
-                margin-bottom: 3rem;
+                margin-bottom: 2.5rem;
             }
         }
             a{

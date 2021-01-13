@@ -65,7 +65,7 @@ body {
   flex-direction: column;
   width: 97%;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .container_fonctionnement {
     display: flex;
     align-items: center;
@@ -78,11 +78,11 @@ body {
   align-content: center;
   margin-left: -1rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .container_fonctionnement__cartouche {
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 80%;
   }
 }
 .container_fonctionnement__options {
@@ -96,9 +96,10 @@ body {
   box-shadow: 0 0 10px #0000002e;
   margin-bottom: 1rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .container_fonctionnement__options {
-    padding-right: 2rem;
+    margin: 1.5rem;
+    flex: 1;
   }
 }
 .container_fonctionnement__options::before {
@@ -131,7 +132,7 @@ body {
   padding-top: 2.5rem;
   padding-left: 1rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .container_fonctionnement__titre {
     padding-top: 1rem;
     padding-left: 0;
@@ -155,7 +156,7 @@ body {
 .container_restaurants {
   background-color: #F6F6F6;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .container_restaurants {
     display: flex;
     flex-direction: column;
@@ -166,7 +167,7 @@ body {
   padding-top: 2.5rem;
   padding-left: 1.2rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .container_restaurants__titre {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -180,7 +181,7 @@ body {
   width: 90%;
   margin: auto;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .cartouche_restaurants {
     display: flex;
     flex-direction: row;
@@ -196,10 +197,10 @@ body {
   cursor: pointer;
   margin-bottom: 1.2rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .cartouche_restaurants__bloc {
     width: 48%;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
 }
 .cartouche_restaurants a {
@@ -254,7 +255,7 @@ body {
   padding: 1.2rem;
   padding-bottom: 3rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .container_footer {
     width: 80%;
     display: flex;
@@ -268,7 +269,7 @@ body {
   width: 35%;
   margin-bottom: 2rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .container_footer__logo {
     width: 12%;
   }
@@ -283,6 +284,11 @@ body {
 }
 .container_footer__categorie {
   padding-bottom: 0.5rem;
+}
+
+.categorie_icon {
+  padding-right: 0.5rem;
+  width: 1.2rem;
 }
 
 .intro_site_button {
@@ -341,7 +347,7 @@ body {
   width: 100%;
   object-fit: cover;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .img_restaurants {
     height: 35rem;
   }
@@ -352,13 +358,13 @@ body {
   border-radius: 2rem 2rem 0 0;
   position: relative;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   #section_restaurants {
     text-align: center;
     margin: auto;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   #section_restaurants {
     width: 85%;
   }
@@ -374,7 +380,7 @@ body {
   border-radius: 2rem 2rem 0 0;
   margin-top: -3rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .header_menu_rts {
     margin-top: -6rem;
     padding-left: 2rem;
@@ -390,7 +396,7 @@ body {
   padding: 1.2rem;
   margin-top: -1rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .container_rts {
     padding: 1.5rem;
     display: flex;
@@ -401,7 +407,7 @@ body {
 .container_cartouches_entrees, .container_cartouches_plats, .container_cartouches_desserts {
   margin-bottom: 3rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .container_cartouches_entrees, .container_cartouches_plats, .container_cartouches_desserts {
     width: 32%;
     margin-bottom: 0;
