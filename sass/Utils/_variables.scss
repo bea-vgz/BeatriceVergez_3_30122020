@@ -77,7 +77,6 @@ $background-color : (gris_clair:$colour-quaternary, gris_fonce:$colour-quinary, 
     border-radius: 2rem 2rem 0 0;
     position: relative;
     @include desktop {
-        width: 75%;
         text-align: center;
         margin: auto;
     }

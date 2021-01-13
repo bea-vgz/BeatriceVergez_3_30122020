@@ -354,9 +354,13 @@ body {
 }
 @media screen and (min-width: 1200px) {
   #section_restaurants {
-    width: 75%;
     text-align: center;
     margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #section_restaurants {
+    width: 85%;
   }
 }
 
@@ -388,13 +392,20 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container_rts {
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
+    justify-content: space-between;
   }
 }
 
 .container_cartouches_entrees, .container_cartouches_plats, .container_cartouches_desserts {
   margin-bottom: 3rem;
+}
+@media screen and (min-width: 1200px) {
+  .container_cartouches_entrees, .container_cartouches_plats, .container_cartouches_desserts {
+    width: 32%;
+    margin-bottom: 0;
+  }
 }
 
 .container_cartouches_titre {
@@ -443,7 +454,7 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 2.5rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
