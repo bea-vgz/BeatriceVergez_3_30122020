@@ -54,7 +54,7 @@ body {
             @include desktop {
                 display: flex;
                 justify-content: space-between;
-                width: 75%;
+                width: 70%;
             }
         }
             &__options {
@@ -67,10 +67,10 @@ body {
                 align-items: center;
                 box-shadow: 0 0 10px #0000002e;
                 margin-bottom: 1rem;
-                @include desktop {
-                    padding-right: 2rem;
-                }
-                }
+                    @include desktop {
+                        padding-right: 2rem;
+                    }
+            }
             
                 &__options::before {
                     counter-increment: compteListe 1;

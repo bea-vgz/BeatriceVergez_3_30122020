@@ -82,7 +82,7 @@ body {
   .container_fonctionnement__cartouche {
     display: flex;
     justify-content: space-between;
-    width: 75%;
+    width: 70%;
   }
 }
 .container_fonctionnement__options {
