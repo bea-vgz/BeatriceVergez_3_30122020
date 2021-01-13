@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin desktop {
+    @media screen and (min-width: 1200px){
+        @content;
+    }
+}
 
 body {
     margin: 0;
@@ -35,6 +40,9 @@ body {
 .img_restaurants {
     width: 100%;
     object-fit: cover;
+    @include desktop {
+        height: 40rem;
+    }
 }
 #section_restaurants {
     @include section_restaurants;
@@ -49,6 +57,10 @@ body {
 .container_rts {
     padding: 1.2rem;
     margin-top: -1rem;
+    @include desktop {
+        padding: 2rem;
+        display:flex;
+    }
 }
 
 .container_cartouches_entrees, .container_cartouches_plats, .container_cartouches_desserts {
@@ -59,6 +71,8 @@ body {
     border-bottom: 4px solid $colour-tertiary;
     padding-bottom: 0.3rem;
     width: 12%;
+    position: relative;
+    justify-content: flex-start;
 }
 
 .cartouche_entrees, .cartouche_plats, .cartouche_desserts {
@@ -93,6 +107,6 @@ body {
 .button {
     display:flex;
     justify-content: center;
-    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
     margin-top: 2rem;
 }
