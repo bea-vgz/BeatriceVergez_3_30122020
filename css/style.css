@@ -65,11 +65,25 @@ body {
   flex-direction: column;
   width: 97%;
 }
+@media screen and (min-width: 1200px) {
+  .container_fonctionnement {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
 .container_fonctionnement__cartouche {
   list-style-type: none;
   counter-reset: compteListe;
   align-content: center;
   margin-left: -1rem;
+}
+@media screen and (min-width: 1200px) {
+  .container_fonctionnement__cartouche {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+  }
 }
 .container_fonctionnement__options {
   max-width: 100%;
@@ -81,6 +95,11 @@ body {
   align-items: center;
   box-shadow: 0 0 10px #0000002e;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 1200px) {
+  .container_fonctionnement__options {
+    padding-right: 2rem;
+  }
 }
 .container_fonctionnement__options::before {
   counter-increment: compteListe 1;
@@ -112,6 +131,12 @@ body {
   padding-top: 2.5rem;
   padding-left: 1rem;
 }
+@media screen and (min-width: 1200px) {
+  .container_fonctionnement__titre {
+    padding-top: 1rem;
+    padding-left: 0;
+  }
+}
 
 .intro_site {
   background-color: #F6F6F6;
@@ -130,9 +155,23 @@ body {
 .container_restaurants {
   background-color: #F6F6F6;
 }
+@media screen and (min-width: 1200px) {
+  .container_restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container_restaurants__titre {
   padding-top: 2.5rem;
   padding-left: 1.2rem;
+}
+@media screen and (min-width: 1200px) {
+  .container_restaurants__titre {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0;
+  }
 }
 
 .cartouche_restaurants {
@@ -141,12 +180,27 @@ body {
   width: 90%;
   margin: auto;
 }
+@media screen and (min-width: 1200px) {
+  .cartouche_restaurants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+  }
+}
 .cartouche_restaurants__bloc {
   background-color: #FFFFFF;
   border-radius: 1.2rem;
   box-shadow: 0 0 16px #0000002e;
   cursor: pointer;
   margin-bottom: 1.2rem;
+}
+@media screen and (min-width: 1200px) {
+  .cartouche_restaurants__bloc {
+    width: 48%;
+    margin-bottom: 3rem;
+  }
 }
 .cartouche_restaurants a {
   text-decoration: none;
@@ -200,9 +254,21 @@ body {
   padding: 1.2rem;
   padding-bottom: 3rem;
 }
+@media screen and (min-width: 1200px) {
+  .container_footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+}
 .container_footer__logo {
   width: 35%;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 1200px) {
+  .container_footer__logo {
+    width: 15%;
+  }
 }
 .container_footer a {
   text-decoration: none;
