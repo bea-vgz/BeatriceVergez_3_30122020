@@ -556,30 +556,6 @@ body {
     margin: 0;
   }
 
-  .container_header_rts {
-    display: flex;
-    max-width: 100%;
-    padding: 1.2rem;
-    position: relative;
-    color: black;
-    justify-content: center;
-  }
-  .container_header_rts a {
-    text-decoration: none;
-    color: black;
-  }
-  .container_header_rts__logo-arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .container_header_rts__arrow {
-    padding: 1rem;
-    position: absolute;
-    top: 0.6rem;
-    left: 0.5rem;
-  }
-
   .img_restaurants {
     height: 35rem;
   }
@@ -622,56 +598,6 @@ body {
     width: 32%;
     margin-bottom: 0;
   }
-
-  .container_cartouches_titre {
-    border-bottom: 4px solid #99E2D0;
-    padding-bottom: 0.3rem;
-    width: 12%;
-    position: relative;
-    justify-content: flex-start;
-  }
-
-  .cartouche_entrees, .cartouche_plats, .cartouche_desserts {
-    background-color: #FFFFFF;
-    border-radius: 1.2rem;
-    box-shadow: 0 0 16px #0000002e;
-    cursor: pointer;
-    margin-bottom: 1.2rem;
-  }
-  .cartouche_entrees__bloctext, .cartouche_plats__bloctext, .cartouche_desserts__bloctext {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-left: 0.8rem;
-    padding-right: 1.1rem;
-  }
-  .cartouche_entrees a, .cartouche_plats a, .cartouche_desserts a {
-    text-decoration: none;
-    color: black;
-  }
-  .cartouche_entrees__text, .cartouche_plats__text, .cartouche_desserts__text {
-    margin-top: -0.7rem;
-    text-align: left;
-  }
-  .cartouche_entrees__titre, .cartouche_plats__titre, .cartouche_desserts__titre {
-    margin-bottom: 0.4rem;
-  }
-  .cartouche_entrees__texte, .cartouche_plats__texte, .cartouche_desserts__texte {
-    margin-top: 0.3rem;
-    font-size: 0.9rem;
-  }
-  .cartouche_entrees__price, .cartouche_plats__price, .cartouche_desserts__price {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    margin-bottom: 0.8rem;
-  }
-
-  .button {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 2.5rem;
-    margin-top: 1rem;
-  }
 }
 /* Restaurants version tablette */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -691,7 +617,7 @@ body {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 2rem;
   border: none;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: normal;
   color: white;
@@ -703,7 +629,7 @@ body {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 2rem;
   border: none;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: normal;
   color: white;
