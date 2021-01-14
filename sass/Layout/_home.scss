@@ -52,7 +52,6 @@
                     box-shadow: 0 0 10px #0000002e;
                     margin-bottom: 1rem;
                 }
-                
                     &__options::before {
                         counter-increment: compteListe 1;
                         content: counter(compteListe) " ";
@@ -98,7 +97,6 @@
                     margin-bottom: 2rem;
                 }
     }
-
     .container_restaurants {
         background-color: $colour-quaternary;
             &__titre {
@@ -106,7 +104,6 @@
                 padding-left: 1.2rem;
             }
     }
-
     .cartouche_restaurants {
         display:flex;
         flex-direction: column;
