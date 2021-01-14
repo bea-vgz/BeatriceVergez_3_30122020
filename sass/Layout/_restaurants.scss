@@ -49,11 +49,9 @@
         padding: 1.2rem;
         margin-top: -1rem;
     }
-
     .container_cartouches_entrees, .container_cartouches_plats, .container_cartouches_desserts {
         margin-bottom: 3rem;
     }
-
     .container_cartouches_titre {
         border-bottom: 4px solid $colour-tertiary;
         padding-bottom: 0.3rem;
@@ -61,7 +59,6 @@
         position: relative;
         justify-content: flex-start;
     }
-
     .cartouche_entrees, .cartouche_plats, .cartouche_desserts {
         @include bloc;
             &__bloctext {
