@@ -1,10 +1,6 @@
-/* Mobile first Restaurants */
+/* Restaurants version desktop */
 
-@mixin mobile {
-    @media screen and (max-width: 480px){
-        @content;
-    }
-}
+@media screen and (min-width: 1024px){
     body {
         margin: 0;
     }
@@ -32,26 +28,34 @@
                     }
     }
     .img_restaurants {
-        width: 100%;
-        object-fit: cover;
+        height: 35rem;
     }
     #section_restaurants {
         @include section_restaurants;
+        text-align: center;
+        margin: auto;
+        width: 85%;
     }
     .header_menu_rts {
         @include header_menu;
+        margin-top: -6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
             a {
                 text-decoration: none;
                 color: black;
             }
     }
     .container_rts {
-        padding: 1.2rem;
+        padding: 1.5rem;
         margin-top: -1rem;
+        display:flex;
+        justify-content: space-between;
     }
 
     .container_cartouches_entrees, .container_cartouches_plats, .container_cartouches_desserts {
-        margin-bottom: 3rem;
+            width: 32%;
+            margin-bottom: 0;
     }
 
     .container_cartouches_titre {
@@ -98,3 +102,4 @@
         padding-bottom: 2.5rem;
         margin-top: 1rem;
     }
+}
