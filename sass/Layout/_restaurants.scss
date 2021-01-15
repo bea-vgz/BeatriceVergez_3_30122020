@@ -88,7 +88,31 @@
                                     font-weight: 700;
                                     margin-bottom: 0.8rem;
                                 }
-    }   
+    }
+    .menu_confirmation {
+        background-color: $colour-tertiary;
+        border-radius: 0 1rem 1rem 0;
+        cursor: pointer;
+        width: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: -5rem;
+        padding: 1.2rem;
+            &__bloc {
+                height: 1.6rem;
+                width: 1.6rem;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 1rem;
+            }
+                &__icon {
+                    color: $colour-tertiary;
+                }
+
+    }
     .button {
         display:flex;
         justify-content: center;

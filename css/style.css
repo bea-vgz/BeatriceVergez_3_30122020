@@ -148,10 +148,11 @@ body {
   box-shadow: 0 0 16px #0000002e;
   cursor: pointer;
   margin-bottom: 1.2rem;
+  position: relative;
 }
 .cartouche_restaurants a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 .cartouche_restaurants__nouveau {
   background-color: #99E2D0;
@@ -159,9 +160,9 @@ body {
   border-radius: 0.2rem;
   padding: 0.5rem 1rem;
   font-family: 'Roboto', sans-serif;
-  margin-top: 1rem;
   position: absolute;
-  right: 2rem;
+  right: 1rem;
+  top: 1rem;
 }
 .cartouche_restaurants__figure {
   margin: 0rem;
@@ -273,12 +274,13 @@ body {
     box-shadow: 0 0 16px #0000002e;
     cursor: pointer;
     margin-bottom: 1.2rem;
+    position: relative;
     width: 48%;
     margin-bottom: 2.5rem;
   }
   .cartouche_restaurants a {
     text-decoration: none;
-    color: black;
+    color: inherit;
   }
   .cartouche_restaurants__nouveau {
     background-color: #99E2D0;
@@ -286,9 +288,9 @@ body {
     border-radius: 0.2rem;
     padding: 0.5rem 1rem;
     font-family: 'Roboto', sans-serif;
-    margin-top: 1rem;
     position: absolute;
-    right: 2rem;
+    right: 1rem;
+    top: 1rem;
   }
 
   .container_footer {
@@ -351,7 +353,7 @@ body {
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
-    color: black;
+    color: inherit;
     margin-left: 1.5rem;
   }
   .container_fonctionnement__titre {
@@ -465,6 +467,7 @@ body {
   box-shadow: 0 0 16px #0000002e;
   cursor: pointer;
   margin-bottom: 1.2rem;
+  position: relative;
 }
 .cartouche_entrees__bloctext, .cartouche_plats__bloctext, .cartouche_desserts__bloctext {
   display: flex;
@@ -492,6 +495,30 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-bottom: 0.8rem;
+}
+
+.menu_confirmation {
+  background-color: #99E2D0;
+  border-radius: 0 1rem 1rem 0;
+  cursor: pointer;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -5rem;
+  padding: 1.2rem;
+}
+.menu_confirmation__bloc {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.menu_confirmation__icon {
+  color: #99E2D0;
 }
 
 .button {
@@ -564,7 +591,7 @@ body {
     width: 6%;
   }
 }
-.intro_site_button {
+.intro_site_button, .commande_button {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 2rem;
   border: none;
@@ -574,18 +601,11 @@ body {
   color: white;
   cursor: pointer;
   box-shadow: 0 0 16px #0000002e;
+  transition-duration: .25s;
 }
-
-.commande_button {
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 2rem;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  font-weight: normal;
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 0 16px #0000002e;
+.intro_site_button:hover, .commande_button:hover {
+  box-shadow: 0.25rem 0.25rem 16px #0000007a;
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */
