@@ -1,3 +1,11 @@
+@keyframes apparition {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 p {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
@@ -149,6 +157,7 @@ body {
   cursor: pointer;
   margin-bottom: 1.2rem;
   position: relative;
+  overflow: hidden;
 }
 .cartouche_restaurants a {
   text-decoration: none;
@@ -275,6 +284,7 @@ body {
     cursor: pointer;
     margin-bottom: 1.2rem;
     position: relative;
+    overflow: hidden;
     width: 48%;
     margin-bottom: 2.5rem;
   }
@@ -451,6 +461,7 @@ body {
 
 .container_cartouches_entrees, .container_cartouches_plats, .container_cartouches_desserts {
   margin-bottom: 3rem;
+  animation-name: apparition 0.5s;
 }
 
 .container_cartouches_titre {
@@ -468,13 +479,13 @@ body {
   cursor: pointer;
   margin-bottom: 1.2rem;
   position: relative;
+  overflow: hidden;
 }
 .cartouche_entrees__bloctext, .cartouche_plats__bloctext, .cartouche_desserts__bloctext {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
   padding-left: 0.8rem;
   padding-right: 1.1rem;
+  cursor: pointer;
 }
 .cartouche_entrees a, .cartouche_plats a, .cartouche_desserts a {
   text-decoration: none;
@@ -483,32 +494,43 @@ body {
 .cartouche_entrees__text, .cartouche_plats__text, .cartouche_desserts__text {
   margin-top: -0.7rem;
   text-align: left;
+  overflow: hidden;
+  flex: 1;
 }
 .cartouche_entrees__titre, .cartouche_plats__titre, .cartouche_desserts__titre {
   margin-bottom: 0.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .cartouche_entrees__texte, .cartouche_plats__texte, .cartouche_desserts__texte {
   margin-top: 0.3rem;
   font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .cartouche_entrees__price, .cartouche_plats__price, .cartouche_desserts__price {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-bottom: 0.8rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
-
-.menu_confirmation {
-  background-color: #99E2D0;
-  border-radius: 0 1rem 1rem 0;
-  cursor: pointer;
-  width: 3rem;
+.cartouche_entrees__confirmation, .cartouche_plats__confirmation, .cartouche_desserts__confirmation {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: -5rem;
-  padding: 1.2rem;
+  background-color: #99E2D0;
+  width: 5rem;
+  margin: -1rem -6.1rem -1rem 1rem;
+  margin-left: 1.5rem;
 }
-.menu_confirmation__bloc {
+.cartouche_entrees__confirmation:hover, .cartouche_plats__confirmation:hover, .cartouche_desserts__confirmation:hover {
+  margin-right: -1rem;
+}
+.cartouche_entrees__bloc, .cartouche_plats__bloc, .cartouche_desserts__bloc {
   height: 1.6rem;
   width: 1.6rem;
   background-color: #fff;
@@ -517,8 +539,11 @@ body {
   justify-content: center;
   border-radius: 1rem;
 }
-.menu_confirmation__icon {
+.cartouche_entrees__icon, .cartouche_plats__icon, .cartouche_desserts__icon {
   color: #99E2D0;
+  display: inline-block;
+  transform: rotate(180deg);
+  transition-duration: .5s;
 }
 
 .button {
@@ -542,7 +567,6 @@ body {
     background-color: #F6F6F6;
     border-radius: 2rem 2rem 0 0;
     position: relative;
-    text-align: center;
     margin: auto;
     width: 85%;
   }

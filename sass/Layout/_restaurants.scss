@@ -51,6 +51,7 @@
     }
     .container_cartouches_entrees, .container_cartouches_plats, .container_cartouches_desserts {
         margin-bottom: 3rem;
+        animation-name: apparition 0.5s;
     }
     .container_cartouches_titre {
         border-bottom: 4px solid $colour-tertiary;
@@ -63,56 +64,70 @@
         @include bloc;
             &__bloctext {
                 display: flex;
-                align-items: flex-end;
-                justify-content: space-between;
                 padding-left: 0.8rem;
                 padding-right: 1.1rem;
+                cursor: pointer;
             }
-                a{
+                a {
                     text-decoration: none;
                     color: black;
                 }
                     &__text {
                         margin-top: -0.7rem;
                         text-align: left;
+                        overflow: hidden;
+                        flex: 1;
                     }
                         &__titre {
                             margin-bottom: 0.4rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
                         }
                             &__texte {
                                 margin-top: 0.3rem;
                                 font-size: 0.9rem;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
                             }
                                 &__price {
                                     font-family: 'Roboto', sans-serif;
                                     font-weight: 700;
                                     margin-bottom: 0.8rem;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    justify-content: flex-end;
                                 }
+                                    &__confirmation {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        background-color: $colour-tertiary;
+                                        width: 5rem;
+                                        margin: -1rem -6.1rem -1rem 1rem;
+                                        margin-left: 1.5rem;
+                                            &:hover {
+                                                margin-right: -1rem;
+                                            }
+                                    }
+                                            &__bloc {
+                                                height: 1.6rem;
+                                                width: 1.6rem;
+                                                background-color: #fff;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                border-radius: 1rem;
+                                            }
+                                                &__icon {
+                                                    color: $colour-tertiary;
+                                                    display: inline-block;
+                                                    transform: rotate(180deg);
+                                                    transition-duration: .5s;
+                                                }
     }
-    .menu_confirmation {
-        background-color: $colour-tertiary;
-        border-radius: 0 1rem 1rem 0;
-        cursor: pointer;
-        width: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: -5rem;
-        padding: 1.2rem;
-            &__bloc {
-                height: 1.6rem;
-                width: 1.6rem;
-                background-color: #fff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 1rem;
-            }
-                &__icon {
-                    color: $colour-tertiary;
-                }
-
-    }
+    
     .button {
         display:flex;
         justify-content: center;
