@@ -62,7 +62,7 @@ body {
   border-radius: 50%;
   border: 18px solid #9356DC;
   border-top: 18px solid #FF79DA;
-  animation: spin 1s linear infinite;
+  animation: spin linear infinite 1.5s;
   animation-name: loader;
 }
 
