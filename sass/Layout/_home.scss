@@ -9,12 +9,30 @@
     body {
         margin: 0;
     }
+    .loader {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.6);
+            &__icon {
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                border: 18px solid $colour-primary;
+                border-top: 18px solid $colour-secondary;
+                animation: spin 1s linear infinite;
+                animation-name: loader;
+            }
+    }
     .container_header {
         max-width: 100%;
         padding: 2rem;
         text-align: center;
         box-shadow: 0 0 0.5rem #0000002e;
-        position: relative;
         z-index: 1;
     }
     .container_localisation {

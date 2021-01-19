@@ -1,9 +1,10 @@
-@keyframes apparition {
+@keyframes loader {
   0% {
-    transform: scale(0);
+    transform: rotate(0deg);
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: rotate(360deg);
   }
 }
 p {
@@ -45,12 +46,31 @@ body {
   margin: 0;
 }
 
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.loader__icon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 18px solid #9356DC;
+  border-top: 18px solid #FF79DA;
+  animation: spin 1s linear infinite;
+  animation-name: loader;
+}
+
 .container_header {
   max-width: 100%;
   padding: 2rem;
   text-align: center;
   box-shadow: 0 0 0.5rem #0000002e;
-  position: relative;
   z-index: 1;
 }
 
@@ -151,6 +171,7 @@ body {
   margin: auto;
 }
 .cartouche_restaurants__bloc {
+  max-width: 100%;
   background-color: #FFFFFF;
   border-radius: 1.2rem;
   box-shadow: 0 0 16px #0000002e;
@@ -278,6 +299,7 @@ body {
     width: 85%;
   }
   .cartouche_restaurants__bloc {
+    max-width: 100%;
     background-color: #FFFFFF;
     border-radius: 1.2rem;
     box-shadow: 0 0 16px #0000002e;
@@ -408,7 +430,6 @@ body {
   display: flex;
   max-width: 100%;
   padding: 1.2rem;
-  position: relative;
   color: black;
   justify-content: center;
 }
@@ -473,6 +494,7 @@ body {
 }
 
 .cartouche_entrees, .cartouche_plats, .cartouche_desserts {
+  max-width: 100%;
   background-color: #FFFFFF;
   border-radius: 1.2rem;
   box-shadow: 0 0 16px #0000002e;
@@ -523,27 +545,28 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #99E2D0;
-  width: 5rem;
-  margin: -1rem -6.1rem -1rem 1rem;
-  margin-left: 1.5rem;
+  width: 4rem;
+  height: auto;
+  margin: -1rem -5.1rem -1rem 1rem;
+  margin-left: 1rem;
+  transition-duration: 1000ms;
 }
 .cartouche_entrees__confirmation:hover, .cartouche_plats__confirmation:hover, .cartouche_desserts__confirmation:hover {
   margin-right: -1rem;
 }
 .cartouche_entrees__bloc, .cartouche_plats__bloc, .cartouche_desserts__bloc {
+  background-color: white;
   height: 1.6rem;
   width: 1.6rem;
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: rotate(180deg);
+  transition-duration: .5s;
   border-radius: 1rem;
 }
 .cartouche_entrees__icon, .cartouche_plats__icon, .cartouche_desserts__icon {
   color: #99E2D0;
-  display: inline-block;
-  transform: rotate(180deg);
-  transition-duration: .5s;
 }
 
 .button {

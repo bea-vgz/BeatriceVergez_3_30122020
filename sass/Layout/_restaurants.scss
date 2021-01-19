@@ -12,7 +12,6 @@
         display: flex;
         max-width: 100%;
         padding: 1.2rem;
-        position: relative;
         color: black;
         justify-content: center;
             a {
@@ -104,28 +103,29 @@
                                         align-items: center;
                                         justify-content: center;
                                         background-color: $colour-tertiary;
-                                        width: 5rem;
-                                        margin: -1rem -6.1rem -1rem 1rem;
-                                        margin-left: 1.5rem;
+                                        width: 4rem;
+                                        height: auto;
+                                        margin: -1rem -5.1rem -1rem 1rem;
+                                        margin-left: 1rem;
+                                        transition-duration: 1000ms;
                                             &:hover {
                                                 margin-right: -1rem;
                                             }
                                     }
                                             &__bloc {
+                                                background-color: white;
                                                 height: 1.6rem;
                                                 width: 1.6rem;
-                                                background-color: #fff;
                                                 display: flex;
                                                 align-items: center;
                                                 justify-content: center;
+                                                transform: rotate(180deg);
+                                                transition-duration: .5s;
                                                 border-radius: 1rem;
                                             }
-                                                &__icon {
-                                                    color: $colour-tertiary;
-                                                    display: inline-block;
-                                                    transform: rotate(180deg);
-                                                    transition-duration: .5s;
-                                                }
+                                                    &__icon {
+                                                        color: $colour-tertiary;
+                                                    }
     }
     
     .button {
