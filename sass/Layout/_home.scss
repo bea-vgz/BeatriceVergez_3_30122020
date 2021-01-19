@@ -24,7 +24,7 @@
                 border-radius: 50%;
                 border: 18px solid $colour-primary;
                 border-top: 18px solid $colour-secondary;
-                animation: spin linear infinite 1.5s;
+                animation: spin 2s linear infinite;
                 animation-name: loader;
             }
     }
