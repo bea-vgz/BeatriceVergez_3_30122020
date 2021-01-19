@@ -59,20 +59,11 @@
         justify-content: flex-start;
     }
 
-    .loading1 {
-        animation-delay: 0s;
-    }
-    .loading2 {
-        animation-delay: 0.1s;
-    }
-    .loading3 {
-        animation-delay: 0.2s;
-    }
     .cartouche_entrees, .cartouche_plats, .cartouche_desserts {
         @include bloc;
         animation: apparition_plats $anim-dur backwards;
-        animation-direction: alternate;
-        animation-timing-function: cubic-bezier(0.1, 0.2, 0.3, 0);
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
             &__bloctext {
                 display: flex;
                 padding-left: 0.8rem;

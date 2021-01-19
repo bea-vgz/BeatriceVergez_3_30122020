@@ -2,20 +2,19 @@
   0% {
     opacity: 1;
   }
-  50% {
-    opacity: 1;
-  }
   100% {
-    opacity: 0;
+    opacity: 1;
     transform: rotate(360deg);
   }
 }
 @keyframes apparition_plats {
   0% {
-    transform: scale(0);
+    transform: scale(0.2);
+    opacity: 0;
   }
   100% {
     transform: scale(1);
+    opacity: 1;
   }
 }
 p {
@@ -75,6 +74,7 @@ body {
   border-top: 18px solid #FF79DA;
   animation: spin 2s linear infinite;
   animation-name: loader;
+  animation-iteration-count: 2;
 }
 
 .container_header {
@@ -503,18 +503,6 @@ body {
   justify-content: flex-start;
 }
 
-.loading1 {
-  animation-delay: 0s;
-}
-
-.loading2 {
-  animation-delay: 0.1s;
-}
-
-.loading3 {
-  animation-delay: 0.2s;
-}
-
 .cartouche_entrees, .cartouche_plats, .cartouche_desserts {
   max-width: 100%;
   background-color: #FFFFFF;
@@ -524,9 +512,9 @@ body {
   margin-bottom: 1.2rem;
   position: relative;
   overflow: hidden;
-  animation: apparition_plats 0.8s backwards;
-  animation-direction: alternate;
-  animation-timing-function: cubic-bezier(0.1, 0.2, 0.3, 0);
+  animation: apparition_plats 0.5s backwards;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
 }
 .cartouche_entrees__bloctext, .cartouche_plats__bloctext, .cartouche_desserts__bloctext {
   display: flex;
