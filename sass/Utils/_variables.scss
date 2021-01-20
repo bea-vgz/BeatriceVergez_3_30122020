@@ -73,9 +73,23 @@ $background-color : (gris_clair:$colour-quaternary, gris_fonce:$colour-quinary, 
     0% {
         opacity: 1;
     }
+    40%{
+        opacity:0.8;
+    }
+    60%{
+        opacity:0.4;
+    }
+    80%{
+        opacity:0.2;
+    }
     100% {
-        opacity: 1;
+        opacity: 0;
         transform: rotate(360deg);
+    }
+}
+@keyframes loader_background {
+    100% {
+        opacity: 0;
     }
 }
 @keyframes apparition_plats {
@@ -85,6 +99,7 @@ $background-color : (gris_clair:$colour-quaternary, gris_fonce:$colour-quinary, 
     }
     100% {
         transform:translateY(0%);
+        position: relative;
         opacity:1;
     }
   }

@@ -61,8 +61,8 @@
     .cartouche_entrees, .cartouche_plats, .cartouche_desserts {
         @include bloc;
         animation: apparition_plats $anim-dur backwards;
-        animation-direction: alternate;
         transition: cubic-bezier(.12,1.03,.34,1);
+        animation-delay: 0.1s;
             &__bloctext {
                 display: flex;
                 padding-left: 0.8rem;
