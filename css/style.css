@@ -19,6 +19,7 @@
 @keyframes loader_background {
   100% {
     opacity: 0;
+    z-index: -10;
   }
 }
 @keyframes apparition_plats {
@@ -28,7 +29,6 @@
   }
   100% {
     transform: translateY(0%);
-    position: relative;
     opacity: 1;
   }
 }
@@ -79,7 +79,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: wait;
   background-color: rgba(255, 255, 255, 0.616);
   animation-name: loader_background;
   animation-delay: 2.3s;
@@ -530,9 +529,8 @@ body {
   margin-bottom: 1.2rem;
   position: relative;
   overflow: hidden;
-  animation: apparition_plats 1.5s backwards;
-  transition: cubic-bezier(0.12, 1.03, 0.34, 1);
-  animation-delay: 0.1s;
+  animation: apparition_plats 0.6s;
+  animation-fill-mode: both;
 }
 .cartouche_entrees__bloctext, .cartouche_plats__bloctext, .cartouche_desserts__bloctext {
   display: flex;
@@ -598,6 +596,22 @@ body {
 }
 .cartouche_entrees__icon, .cartouche_plats__icon, .cartouche_desserts__icon {
   color: #99E2D0;
+}
+
+.loading-1 {
+  animation-delay: 0.2s;
+}
+
+.loading-2 {
+  animation-delay: 0.4s;
+}
+
+.loading-3 {
+  animation-delay: 0.6s;
+}
+
+.loading-4 {
+  animation-delay: 0.8s;
 }
 
 .button {

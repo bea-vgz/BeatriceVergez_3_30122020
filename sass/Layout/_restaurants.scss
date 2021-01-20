@@ -60,9 +60,8 @@
     }
     .cartouche_entrees, .cartouche_plats, .cartouche_desserts {
         @include bloc;
-        animation: apparition_plats $anim-dur backwards;
-        transition: cubic-bezier(.12,1.03,.34,1);
-        animation-delay: 0.1s;
+        animation: apparition_plats $anim-dur;
+        animation-fill-mode: both;
             &__bloctext {
                 display: flex;
                 padding-left: 0.8rem;
@@ -129,7 +128,18 @@
                                                         color: $colour-tertiary;
                                                     }
     }
-    
+    .loading-1 {
+        animation-delay: 0.2s;
+    }
+    .loading-2 {
+        animation-delay: 0.4s;
+    }
+    .loading-3 {
+        animation-delay: 0.6s;
+    }
+    .loading-4{
+        animation-delay: 0.8s;
+    }
     .button {
         display:flex;
         justify-content: center;
