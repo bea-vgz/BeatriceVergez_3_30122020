@@ -165,8 +165,11 @@
                                             margin-top: 0.3rem;
                                         }
                                             &__coeur {
+                                                background-color: transparent;
                                                 &:hover {
-                                                    color: linear-gradient($colour-secondary, $colour-primary);
+                                                transition-duration: .15s;
+                                                background-image: linear-gradient($colour-secondary, $colour-primary);
+                                                background-clip: border-box;
                                                 }
                                             }
     }

@@ -247,8 +247,13 @@ body {
 .cartouche_restaurants__texte {
   margin-top: 0.3rem;
 }
+.cartouche_restaurants__coeur {
+  background-color: transparent;
+}
 .cartouche_restaurants__coeur:hover {
-  color: linear-gradient(#FF79DA, #9356DC);
+  transition-duration: .15s;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-clip: border-box;
 }
 
 #container_footer {
