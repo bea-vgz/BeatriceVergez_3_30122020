@@ -256,9 +256,7 @@ body {
   margin-top: 0.3rem;
 }
 .cartouche_restaurants__coeur {
-  background-image: transparent;
   color: black;
-  background-clip: text;
   font-family: FontAwesome;
   text-decoration: inherit;
 }
