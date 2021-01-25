@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes loader {
   0% {
     opacity: 1;
@@ -32,6 +33,7 @@
     opacity: 1;
   }
 }
+/* Éléments typographiques */
 p {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
@@ -66,7 +68,7 @@ h5 {
   font-size: 1rem;
 }
 
-/* Mobile first Homepage */
+/* Mobile first Homepage - @media screen and (max-width: 480px) */
 body {
   margin: 0;
 }
@@ -476,7 +478,7 @@ body {
     width: 15%;
   }
 }
-/* Mobile first Restaurants */
+/* Mobile first Restaurants - @media screen and (max-width: 480px)*/
 body {
   margin: 0;
 }
