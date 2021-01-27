@@ -258,16 +258,27 @@ body {
 .cartouche_restaurants__texte {
   margin-top: 0.3rem;
 }
-.cartouche_restaurants__coeur {
-  font-family: "Font Awesome 5 Free";
-  text-decoration: inherit;
+.cartouche_restaurants__coeur .coeur--actif {
+  opacity: 0;
 }
-.cartouche_restaurants__coeur:hover {
+.cartouche_restaurants__coeur .coeur--inactif {
+  display: block;
+  position: absolute;
+}
+.cartouche_restaurants__coeur:hover .coeur--actif {
+  display: block;
   background-image: linear-gradient(#FF79DA, #9356DC);
-  transition-duration: 0.7s;
-  background-clip: content-box;
-  object-fit: cover;
-  cursor: pointer;
+  opacity: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.5s;
+  transform: scale(1);
+  transform-origin: center;
+  animation-delay: 0s;
+}
+.cartouche_restaurants__coeur:hover .coeur--inactif {
+  opacity: 0;
 }
 
 #container_footer {

@@ -173,18 +173,33 @@
                                             margin-top: 0.3rem;
                                         }
                                             &__coeur {
-                                                font-family: "Font Awesome 5 Free";
-                                                text-decoration: inherit;
-                                                    &:hover {
-                                                        background-image: linear-gradient($colour-secondary, $colour-primary);
-                                                        transition-duration: 0.7s;
-                                                        background-clip: content-box;
-                                                        object-fit: cover;
-                                                        cursor: pointer;
+                                                    .coeur--actif {
+                                                        opacity: 0;
                                                     }
+                                                    .coeur--inactif {
+                                                        display: block;
+                                                        position: absolute;
+                                                    }
+                                                    &:hover .coeur {
+                                                            &--actif {
+                                                                display: block;
+                                                                background-image:linear-gradient($colour-secondary, $colour-primary);
+                                                                opacity: 1;
+                                                                background-clip: text;
+                                                                -webkit-background-clip: text;
+                                                                color: transparent;
+                                                                transition: all 0.5s;
+                                                                transform: scale(1);
+                                                                transform-origin: center;
+                                                                animation-delay: 0s;
+                                                            }
+                                                            &--inactif {
+                                                                opacity:0;
+                                                            }
+                                                    }
+                                                
                                             }
     }
-    
     #container_footer {
         background-color: map-get($background-color, gris_fonce);
         max-width: 100%;
@@ -210,4 +225,4 @@
                                 padding-right: 0.5rem;
                                 width: 1.2rem;
                             }
-    }
+    }                       
