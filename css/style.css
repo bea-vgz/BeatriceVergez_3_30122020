@@ -258,12 +258,13 @@ body {
 .cartouche_restaurants__texte {
   margin-top: 0.3rem;
 }
-.cartouche_restaurants__coeur .coeur--actif {
-  opacity: 0;
+.cartouche_restaurants__coeur {
+  position: relative;
 }
 .cartouche_restaurants__coeur .coeur--inactif {
   display: block;
   position: absolute;
+  background-color: white !important;
 }
 .cartouche_restaurants__coeur:hover .coeur--actif {
   display: block;
@@ -272,13 +273,12 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition: all 0.5s;
+  transition-duration: .25s;
   transform: scale(1);
   transform-origin: center;
-  animation-delay: 0s;
 }
 .cartouche_restaurants__coeur:hover .coeur--inactif {
-  opacity: 0;
+  display: none;
 }
 
 #container_footer {
