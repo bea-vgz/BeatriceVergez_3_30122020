@@ -181,15 +181,7 @@
                                                     }
                                                     &:hover .coeur {
                                                         &--actif {
-                                                            display: block;
-                                                            background-image: linear-gradient($colour-secondary, $colour-primary);
-                                                            opacity: 1;
-                                                            background-clip: text;
-                                                            -webkit-background-clip: text;
-                                                            color: transparent;
-                                                            transition-duration: .25s;
-                                                            transform: scale(1);
-                                                            transform-origin: center;
+                                                            @include activation_coeur;
                                                         }
                                                         &--inactif {
                                                             display: none;
